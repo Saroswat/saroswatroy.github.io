@@ -2,6 +2,8 @@
 
 A dark-first, accessible portfolio for an AI Engineer and Data Scientist working across agentic systems, NLP, explainable AI, responsible deployment and real-world IT operations.
 
+**Live portfolio:** [saroswat-roy-portfolio.saroswat.chatgpt.site](https://saroswat-roy-portfolio.saroswat.chatgpt.site)
+
 ## Product scope
 
 - Editorial home page and professional narrative
