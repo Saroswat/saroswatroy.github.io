@@ -18,7 +18,7 @@ A dark-first, accessible portfolio for an AI Engineer and Data Scientist working
 
 ## Technology
 
-Next.js 16, React 19, TypeScript, Tailwind CSS 4, Vinext, Cloudflare Worker-compatible output and the OpenAI Sites deployment adapter.
+Next.js 16, React 19, TypeScript, Tailwind CSS 4, Vinext and Cloudflare Worker-compatible output.
 
 ## Local development
 
@@ -45,9 +45,9 @@ Copy `.env.example` to `.env.local` when needed.
 
 No private API key is required. The contact form composes a message in the visitor's email client and the site uses no analytics or advertising trackers.
 
-## Evidence policy
+## Project information
 
-Portfolio claims are restricted to connected GitHub repositories, reviewed source code, saved experiment outputs and profile information supplied by Saroswat Roy. Missing live demos and credential URLs are omitted rather than guessed. See `docs/repository-inventory.md` for the audit record.
+Project summaries and measurements are drawn from the linked source repositories and saved experiment outputs. Public links are included where they are available.
 
 ## Rights
 

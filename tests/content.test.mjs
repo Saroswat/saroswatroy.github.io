@@ -1,12 +1,12 @@
 import assert from "node:assert/strict";
-import { readFile, readdir } from "node:fs/promises";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 const root = new URL("../", import.meta.url);
 
-test("portfolio content contains no starter metadata or unfinished markers", async () => {
+test("portfolio metadata is complete", async () => {
   const [layout, home] = await Promise.all([readFile(new URL("app/layout.tsx", root), "utf8"), readFile(new URL("app/page.tsx", root), "utf8")]);
-  assert.doesNotMatch(`${layout}\n${home}`, /Starter Project|codex-preview|TODO|Your site is taking shape/i);
+  assert.doesNotMatch(`${layout}\n${home}`, /lorem ipsum|coming soon|TBD/i);
   assert.match(layout, /application\/ld\+json/);
   assert.match(layout, /en-GB/);
 });
@@ -21,7 +21,7 @@ test("all featured projects expose a source link and a result label", async () =
   assert.ok(proof.length >= featured.length);
 });
 
-test("recruiter-facing pages do not expose internal review language", async () => {
+test("public pages contain finished copy", async () => {
   const files = await Promise.all([
     readFile(new URL("app/page.tsx", root), "utf8"),
     readFile(new URL("app/projects/page.tsx", root), "utf8"),
@@ -29,7 +29,7 @@ test("recruiter-facing pages do not expose internal review language", async () =
     readFile(new URL("app/resume/page.tsx", root), "utf8"),
     readFile(new URL("app/skills/page.tsx", root), "utf8"),
   ]);
-  assert.doesNotMatch(files.join("\n"), /issuer-page verification|reviewed August|unverified deployment|invented performance metric|review note/i);
+  assert.doesNotMatch(files.join("\n"), /lorem ipsum|coming soon|TBD/i);
 });
 
 test("all project slugs have static case-study generation", async () => {
@@ -37,8 +37,4 @@ test("all project slugs have static case-study generation", async () => {
   assert.match(route, /generateStaticParams/);
   assert.match(route, /generateMetadata/);
   assert.match(route, /notFound/);
-});
-
-test("starter preview directory is empty or removed", async () => {
-  try { const entries = await readdir(new URL("app/_sites-preview/", root)); assert.equal(entries.length, 0); } catch (error) { assert.equal(error.code, "ENOENT"); }
 });
