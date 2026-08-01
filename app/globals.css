@@ -227,7 +227,6 @@ blockquote { margin: 3.5rem 0 0; padding: 2rem 0 2rem 2rem; border-left: 2px sol
 .cert-card { min-height: 260px; padding: 1.6rem; border: 1px solid var(--line); background: var(--surface); display: flex; flex-direction: column; }
 .cert-card h2 { margin: auto 0 .8rem; font-size: 1.25rem; line-height: 1.28; }
 .cert-card > p:not(.eyebrow) { color: var(--accent); }
-.verification-note { color: var(--muted); font-size: .7rem; }
 .resume-hero { align-items: end; }
 .resume-hero > div:last-child { grid-column: 2; }
 .review-notice { display: grid; grid-template-columns: .25fr .75fr; gap: 2rem; padding: 1.4rem; margin-bottom: 2rem; border-left: 2px solid #f5b942; background: color-mix(in srgb, #f5b942 7%, var(--surface)); }
