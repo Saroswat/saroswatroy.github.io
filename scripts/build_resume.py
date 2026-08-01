@@ -46,7 +46,7 @@ def footer(canvas, doc):
 
 
 def bullet(text):
-    return Paragraph(f"• {text}", bullet_style)
+    return Paragraph(f"- {text}", bullet_style)
 
 
 def role(title, organisation, period, summary, bullets):
@@ -64,17 +64,17 @@ story = [
     Paragraph("AI Engineer & Data Scientist · Agentic AI · NLP · Explainable AI · IT Operations", role_style),
     Paragraph("London, United Kingdom  |  saroswatroy@gmail.com  |  linkedin.com/in/saroswat-roy  |  github.com/Saroswat", contact_style),
     Paragraph("PROFILE", section_style),
-    Paragraph("AI Engineer and Data Scientist combining agentic systems, natural language processing, Generative AI, Explainable AI and real-world IT operations. Builds intelligent systems that are autonomous where appropriate, explainable where necessary, secure by design and operationally useful.", body_style),
+    Paragraph("AI engineer building governed agents and trustworthy language systems for real-world operations. Combines agentic AI, natural language processing, responsible AI and hands-on technology operations to design systems that are useful, reviewable and secure.", body_style),
     Paragraph("EXPERIENCE", section_style),
-    role("Information Technology Support Engineer", "City of London Corporation · City of London School", "Sep 2025 – Present", "Supports secure, reliable technology services and applies automation to operational workflows.", ["Office 365 administration, technical troubleshooting, networking and device support.", "Cybersecurity, cloud-security and risk-aware incident handling.", "AI-assisted ticket triage, prioritisation and repetitive-work reduction."]),
-    role("Artificial Intelligence Research Graduate Assistant", "City of London School", "Sep 2024 – Aug 2025", "Applied AI research and education with an emphasis on responsible use in learning environments.", ["Machine learning, NLP, prompt engineering and AI-assisted teaching.", "Software testing, AWS experimentation and safe, age-appropriate AI support."]),
-    role("Research Assistant", "University of Engineering & Management, Jaipur", "Nov 2021 – Jun 2022", "Contributed to research on semantic analysis of code.", ["Code semantics, data modelling, statistical analysis and algorithms.", "Research methodology and technical documentation."]),
+    role("Information Technology Support Engineer", "City of London Corporation · City of London School", "Sep 2025 - Present", "Supports secure, reliable technology services and applies automation to operational workflows.", ["Office 365 administration, technical troubleshooting, networking and device support.", "Cybersecurity, cloud-security and risk-aware incident handling.", "AI-assisted ticket triage, prioritisation and repetitive-work reduction."]),
+    role("Artificial Intelligence Research Graduate Assistant", "City of London School", "Sep 2024 - Aug 2025", "Applied AI research and education with an emphasis on responsible use in learning environments.", ["Machine learning, NLP, prompt engineering and AI-assisted teaching.", "Software testing, AWS experimentation and safe, age-appropriate AI support."]),
+    role("Research Assistant", "University of Engineering & Management, Jaipur", "Nov 2021 - Jun 2022", "Contributed to research on semantic analysis of code.", ["Code semantics, data modelling, statistical analysis and algorithms.", "Research methodology and technical documentation."]),
     Paragraph("EDUCATION", section_style),
     Paragraph("MSc Artificial Intelligence, Natural Language Processing", heading_style),
-    Paragraph("Queen Mary University of London · Sep 2023 – Sep 2024 · Merit", meta_style),
+    Paragraph("Queen Mary University of London · Sep 2023 - Sep 2024 · Merit", meta_style),
     Paragraph("Research: biomedical named entity recognition using transformer-based models. Study included NLP, NLU, deep learning, transformers, statistics, knowledge engineering and responsible AI.", body_style),
     Paragraph("BTech Computer Science", heading_style),
-    Paragraph("University of Engineering & Management, Jaipur · Aug 2019 – May 2023", meta_style),
+    Paragraph("University of Engineering & Management, Jaipur · Aug 2019 - May 2023", meta_style),
     Paragraph("Algorithms, data structures, programming, machine learning, software engineering, statistics and computer networks.", body_style),
     PageBreak(),
     Paragraph("SELECTED ENGINEERING WORK", section_style),
@@ -90,8 +90,6 @@ story = [
     Paragraph("<b>Engineering and operations:</b> Python, TypeScript, React, Next.js, FastAPI, SQL, REST APIs, Docker, GitHub Actions, IT operations, Office 365, networking and cybersecurity", body_style),
     Paragraph("SELECTED PROFESSIONAL LEARNING", section_style),
     Paragraph("IBM Building AI Agents and Agentic Workflows · Duke Explainable AI · Oxford Saïd AI Governance · Google Cloud Responsible AI for Developers · IBM Data Science · IBM Cybersecurity Analyst · Google IT Support", body_style),
-    Spacer(1, 6),
-    Paragraph("Review note: This resume was refreshed from verified portfolio information and reviewed repository evidence. Certification credential URLs remain pending issuer-page verification.", small_style),
 ]
 
 doc = SimpleDocTemplate(str(OUTPUT), pagesize=A4, leftMargin=18 * mm, rightMargin=18 * mm, topMargin=16 * mm, bottomMargin=19 * mm, title="Saroswat Roy - AI Engineer and Data Scientist Resume", author="Saroswat Roy", subject="Professional resume")

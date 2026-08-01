@@ -21,12 +21,17 @@ export interface Project {
   technologies: string[];
   methods: string[];
   categories: ProjectCategory[];
+  proof: string;
   outcome: string;
   github: string;
   image?: string;
   imageAlt?: string;
+  media?: Array<{
+    src: string;
+    alt: string;
+    caption: string;
+  }>;
   featured: boolean;
-  evidence: string;
 }
 
 export interface Experience {
