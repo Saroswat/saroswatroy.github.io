@@ -1,3 +1,5 @@
 # Saroswat Roy Portfolio
 
-The production portfolio implementation is proposed on the `agent/portfolio-launch` branch.
+**Live portfolio:** [saroswat-roy-portfolio.saroswat.chatgpt.site](https://saroswat-roy-portfolio.saroswat.chatgpt.site)
+
+The full portfolio source is available for review in [pull request #1](https://github.com/Saroswat/saroswatroy.github.io/pull/1).
