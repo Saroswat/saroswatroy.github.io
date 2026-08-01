@@ -14,8 +14,8 @@ export const metadata: Metadata = {
   authors: [{ name: profile.name, url: profile.linkedin }],
   creator: profile.name,
   alternates: { canonical: "/" },
-  openGraph: { type: "website", locale: "en_GB", url: siteUrl, title: `${profile.name} — ${profile.headline}`, description: profile.statement, siteName: `${profile.name} — AI Engineering`, images: [{ url: "/og.png", width: 1200, height: 630, alt: "Saroswat Roy — autonomous, explainable and production-ready AI systems" }] },
-  twitter: { card: "summary_large_image", title: `${profile.name} — AI Engineer`, description: profile.statement, images: ["/og.png"] },
+  openGraph: { type: "website", locale: "en_GB", url: siteUrl, title: `${profile.name} | ${profile.headline}`, description: profile.statement, siteName: `${profile.name} | AI Engineering`, images: [{ url: "/og.png", width: 1200, height: 630, alt: "Saroswat Roy, autonomous, explainable and production-ready AI systems" }] },
+  twitter: { card: "summary_large_image", title: `${profile.name} | AI Engineer`, description: profile.statement, images: ["/og.png"] },
   icons: { icon: "/favicon.png" },
 };
 
@@ -23,7 +23,7 @@ const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
     { "@type": "Person", "@id": `${siteUrl}/#person`, name: profile.name, jobTitle: profile.title, url: siteUrl, sameAs: [profile.github, profile.linkedin], address: { "@type": "PostalAddress", addressLocality: "London", addressCountry: "GB" }, alumniOf: [{ "@type": "CollegeOrUniversity", name: "Queen Mary University of London" }, { "@type": "CollegeOrUniversity", name: "University of Engineering & Management, Jaipur" }], knowsAbout: ["Agentic AI", "Natural Language Processing", "Generative AI", "Explainable AI", "Responsible AI", "Machine Learning"] },
-    { "@type": "WebSite", "@id": `${siteUrl}/#website`, url: siteUrl, name: `${profile.name} — AI Engineering Portfolio`, publisher: { "@id": `${siteUrl}/#person` }, inLanguage: "en-GB" },
+    { "@type": "WebSite", "@id": `${siteUrl}/#website`, url: siteUrl, name: `${profile.name} | AI Engineering Portfolio`, publisher: { "@id": `${siteUrl}/#person` }, inLanguage: "en-GB" },
   ],
 };
 

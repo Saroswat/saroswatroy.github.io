@@ -49,7 +49,7 @@ Last-update dates are not asserted where the connected repository response did n
 | [learn-react](https://github.com/Saroswat/learn-react) | Public | Minimal React learning repository | Course exercise | Exclude | Front-end learning |
 | [datasets](https://github.com/Saroswat/datasets) | Public | Dataset collection | Data-only; not an application or research narrative by itself | Exclude | Data resources |
 | [docs](https://github.com/Saroswat/docs) | Public | Very large documentation repository | Purpose and original contribution not established; too broad for confident presentation | Exclude pending manual provenance review | Documentation |
-| [The-AI-Incubator](https://github.com/Saroswat/The-AI-Incubator) | Public | Empty repository | No source or documentation | Exclude | — |
+| [The-AI-Incubator](https://github.com/Saroswat/The-AI-Incubator) | Public | Empty repository | No source or documentation | Exclude | Not available |
 | [saroswatroy.github.io](https://github.com/Saroswat/saroswatroy.github.io) | Public | Empty repository | No existing portfolio to preserve | Not used; a dedicated portfolio repository is preferable | Portfolio infrastructure |
 
 ## Not found in the connected account

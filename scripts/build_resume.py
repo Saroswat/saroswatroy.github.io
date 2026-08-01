@@ -70,7 +70,7 @@ story = [
     role("Artificial Intelligence Research Graduate Assistant", "City of London School", "Sep 2024 – Aug 2025", "Applied AI research and education with an emphasis on responsible use in learning environments.", ["Machine learning, NLP, prompt engineering and AI-assisted teaching.", "Software testing, AWS experimentation and safe, age-appropriate AI support."]),
     role("Research Assistant", "University of Engineering & Management, Jaipur", "Nov 2021 – Jun 2022", "Contributed to research on semantic analysis of code.", ["Code semantics, data modelling, statistical analysis and algorithms.", "Research methodology and technical documentation."]),
     Paragraph("EDUCATION", section_style),
-    Paragraph("MSc Artificial Intelligence — Natural Language Processing", heading_style),
+    Paragraph("MSc Artificial Intelligence, Natural Language Processing", heading_style),
     Paragraph("Queen Mary University of London · Sep 2023 – Sep 2024 · Merit", meta_style),
     Paragraph("Research: biomedical named entity recognition using transformer-based models. Study included NLP, NLU, deep learning, transformers, statistics, knowledge engineering and responsible AI.", body_style),
     Paragraph("BTech Computer Science", heading_style),
