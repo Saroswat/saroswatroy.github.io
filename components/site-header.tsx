@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 
-const nav = [["Projects", "/projects"], ["Experience", "/experience"], ["About", "/about"], ["Résumé", "/resume"], ["Contact", "/contact"]];
+const nav = [["Projects", "/projects"], ["Experience", "/experience"], ["About", "/about"], ["Resume", "/resume"], ["Contact", "/contact"]];
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);

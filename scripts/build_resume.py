@@ -40,7 +40,7 @@ def footer(canvas, doc):
     canvas.line(18 * mm, 14 * mm, PAGE_W - 18 * mm, 14 * mm)
     canvas.setFont("Helvetica", 7)
     canvas.setFillColor(MUTED)
-    canvas.drawString(18 * mm, 9.5 * mm, "Saroswat Roy · Portfolio résumé · Prepared 1 August 2026")
+    canvas.drawString(18 * mm, 9.5 * mm, "Saroswat Roy · Portfolio resume · Prepared 1 August 2026")
     canvas.drawRightString(PAGE_W - 18 * mm, 9.5 * mm, f"Page {doc.page}")
     canvas.restoreState()
 
@@ -91,7 +91,7 @@ story = [
     Paragraph("SELECTED PROFESSIONAL LEARNING", section_style),
     Paragraph("IBM Building AI Agents and Agentic Workflows · Duke Explainable AI · Oxford Saïd AI Governance · Google Cloud Responsible AI for Developers · IBM Data Science · IBM Cybersecurity Analyst · Google IT Support", body_style),
     Spacer(1, 6),
-    Paragraph("Review note: This résumé was refreshed from verified portfolio information and reviewed repository evidence. Certification credential URLs remain pending issuer-page verification.", small_style),
+    Paragraph("Review note: This resume was refreshed from verified portfolio information and reviewed repository evidence. Certification credential URLs remain pending issuer-page verification.", small_style),
 ]
 
 doc = SimpleDocTemplate(str(OUTPUT), pagesize=A4, leftMargin=18 * mm, rightMargin=18 * mm, topMargin=16 * mm, bottomMargin=19 * mm, title="Saroswat Roy - AI Engineer and Data Scientist Resume", author="Saroswat Roy", subject="Professional resume")

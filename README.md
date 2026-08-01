@@ -8,7 +8,7 @@ A dark-first, accessible portfolio for an AI Engineer and Data Scientist working
 - Searchable, filterable project archive
 - Typed evidence-based project case studies
 - Experience, education, skills and certification routes
-- Downloadable, print-ready résumé PDF
+- Downloadable, print-ready resume PDF
 - Accessible contact flow with a direct email fallback
 - Dark/light themes with saved preference
 - Open Graph, JSON-LD, sitemap and robots metadata
