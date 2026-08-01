@@ -1,4 +1,4 @@
-# Saroswat Roy — AI Engineering Portfolio
+# Saroswat Roy: AI Engineering Portfolio
 
 A dark-first, accessible portfolio for an AI Engineer and Data Scientist working across agentic systems, NLP, explainable AI, responsible deployment and real-world IT operations.
 

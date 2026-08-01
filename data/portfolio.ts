@@ -183,7 +183,7 @@ export const experience: Experience[] = [
   {
     role: "Information Technology Support Engineer",
     organisation: "City of London Corporation · City of London School",
-    period: "September 2025 — Present",
+    period: "September 2025 to present",
     location: "London · On-site",
     summary: "Maintaining reliable, secure technology services while applying automation and AI to operational support workflows.",
     highlights: ["Office 365 administration and technical troubleshooting", "Networking, cybersecurity, cloud security and risk awareness", "AI-assisted ticket triage, prioritisation and repetitive-work reduction", "User-facing incident handling under real operational constraints"],
@@ -191,7 +191,7 @@ export const experience: Experience[] = [
   {
     role: "Artificial Intelligence Research Graduate Assistant",
     organisation: "City of London School",
-    period: "September 2024 — August 2025",
+    period: "September 2024 to August 2025",
     location: "London · Full-time",
     summary: "Applied AI research, education and experimentation with an emphasis on responsible use in learning environments.",
     highlights: ["Machine learning, NLP and prompt engineering", "AI-assisted teaching and support", "Software testing and AWS experimentation", "Safe and age-appropriate AI use"],
@@ -199,7 +199,7 @@ export const experience: Experience[] = [
   {
     role: "Research Assistant",
     organisation: "University of Engineering & Management, Jaipur",
-    period: "November 2021 — June 2022",
+    period: "November 2021 to June 2022",
     location: "Jaipur, India",
     summary: "Contributed to research on semantic analysis of code, connecting machine learning with software-engineering representation.",
     highlights: ["Code semantics and data modelling", "Statistical analysis and algorithms", "Research methodology", "Technical documentation"],
@@ -207,8 +207,8 @@ export const experience: Experience[] = [
 ];
 
 export const education = [
-  { institution: "Queen Mary University of London", degree: "MSc Artificial Intelligence", period: "September 2023 — September 2024", result: "Merit · Natural Language Processing specialisation", detail: "NLP, natural language understanding, deep learning, transformer models, statistics, knowledge engineering and responsible AI. Research: biomedical named entity recognition using transformer-based models." },
-  { institution: "University of Engineering & Management, Jaipur", degree: "BTech Computer Science", period: "August 2019 — May 2023", result: "Computer Science and Engineering", detail: "Algorithms, data structures, programming, machine learning, software engineering, statistics and computer networks." },
+  { institution: "Queen Mary University of London", degree: "MSc Artificial Intelligence", period: "September 2023 to September 2024", result: "Merit · Natural Language Processing specialisation", detail: "NLP, natural language understanding, deep learning, transformer models, statistics, knowledge engineering and responsible AI. Research: biomedical named entity recognition using transformer-based models." },
+  { institution: "University of Engineering & Management, Jaipur", degree: "BTech Computer Science", period: "August 2019 to May 2023", result: "Computer Science and Engineering", detail: "Algorithms, data structures, programming, machine learning, software engineering, statistics and computer networks." },
 ];
 
 export const skillGroups: SkillGroup[] = [
