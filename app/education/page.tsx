@@ -1,0 +1,4 @@
+import type { Metadata } from "next";
+import { education } from "../../data/portfolio";
+export const metadata: Metadata = { title: "Education", description: "MSc Artificial Intelligence and BTech Computer Science education of Saroswat Roy.", alternates: { canonical: "/education" } };
+export default function EducationPage() { return <div className="page-shell"><header className="page-hero"><p className="eyebrow">Education</p><h1>Computer-science foundations, specialised through language AI.</h1></header><div className="education-grid">{education.map((item, index) => <article key={item.degree}><span className="degree-number">0{index + 1}</span><p className="eyebrow">{item.period}</p><h2>{item.degree}</h2><h3>{item.institution}</h3><p className="degree-result">{item.result}</p><p>{item.detail}</p></article>)}</div></div>; }
