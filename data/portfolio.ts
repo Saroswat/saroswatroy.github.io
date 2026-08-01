@@ -148,10 +148,24 @@ export const projects: Project[] = [
     technologies: ["Python", "NumPy", "PyTorch", "OpenVINO", "bitsandbytes", "FastAPI", "React"],
     methods: ["Post-training quantisation", "Perplexity evaluation", "Reconstruction analysis", "Throughput benchmarking"],
     categories: ["ML Systems"],
-    proof: "5 benchmark dimensions",
-    outcome: "Provides an engineering framework for choosing compression strategies based on measured quality and deployment constraints.",
+    proof: "Up to 4× compression in live INT8 runs",
+    outcome: "Live tensor experiments reduced measured storage from 128 KiB to 32.01 KiB while retaining 0.999954 cosine similarity, making compression trade-offs directly comparable.",
     github: "https://github.com/Saroswat/Reducing-the-size-of-Large-Language-Models-with-8-bit-quantization",
     featured: true,
+    image: "/images/projects/quantlab-tensor-results.png",
+    imageAlt: "QuantLab symmetric INT8 experiment showing compression and reconstruction quality metrics",
+    media: [
+      {
+        src: "/images/projects/quantlab-tensor-results.png",
+        alt: "QuantLab symmetric per-row INT8 result with compression, SQNR, cosine similarity and storage metrics",
+        caption: "Symmetric per-row INT8: 3.82× compression, 43.87 dB SQNR and 0.999979 cosine similarity.",
+      },
+      {
+        src: "/images/projects/quantlab-affine-results.png",
+        alt: "QuantLab affine per-tensor INT8 result with compression, SQNR, cosine similarity and storage metrics",
+        caption: "Affine per-tensor INT8: 4× compression, 40.34 dB SQNR and storage reduced from 128 KiB to 32.01 KiB.",
+      },
+    ],
   },
   {
     slug: "ultra-gat-robustness",
