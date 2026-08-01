@@ -11,14 +11,25 @@ test("portfolio content contains no starter metadata or unfinished markers", asy
   assert.match(layout, /en-GB/);
 });
 
-test("all featured projects expose a source link and an evidence note", async () => {
+test("all featured projects expose a source link and a result label", async () => {
   const source = await readFile(new URL("data/portfolio.ts", root), "utf8");
   const featured = [...source.matchAll(/featured: true/g)];
   const github = [...source.matchAll(/github: "https:\/\/github\.com\/Saroswat\//g)];
-  const evidence = [...source.matchAll(/evidence: "/g)];
+  const proof = [...source.matchAll(/proof: "/g)];
   assert.ok(featured.length >= 6);
   assert.ok(github.length >= featured.length);
-  assert.ok(evidence.length >= featured.length);
+  assert.ok(proof.length >= featured.length);
+});
+
+test("recruiter-facing pages do not expose internal review language", async () => {
+  const files = await Promise.all([
+    readFile(new URL("app/page.tsx", root), "utf8"),
+    readFile(new URL("app/projects/page.tsx", root), "utf8"),
+    readFile(new URL("app/projects/[slug]/page.tsx", root), "utf8"),
+    readFile(new URL("app/resume/page.tsx", root), "utf8"),
+    readFile(new URL("app/skills/page.tsx", root), "utf8"),
+  ]);
+  assert.doesNotMatch(files.join("\n"), /issuer-page verification|reviewed August|unverified deployment|invented performance metric|review note/i);
 });
 
 test("all project slugs have static case-study generation", async () => {

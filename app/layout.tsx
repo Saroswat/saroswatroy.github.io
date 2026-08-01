@@ -14,8 +14,8 @@ export const metadata: Metadata = {
   authors: [{ name: profile.name, url: profile.linkedin }],
   creator: profile.name,
   alternates: { canonical: "/" },
-  openGraph: { type: "website", locale: "en_GB", url: siteUrl, title: `${profile.name} | ${profile.headline}`, description: profile.statement, siteName: `${profile.name} | AI Engineering`, images: [{ url: "/og.png", width: 1200, height: 630, alt: "Saroswat Roy, autonomous, explainable and production-ready AI systems" }] },
-  twitter: { card: "summary_large_image", title: `${profile.name} | AI Engineer`, description: profile.statement, images: ["/og.png"] },
+  openGraph: { type: "website", locale: "en_GB", url: siteUrl, title: `${profile.name} | ${profile.headline}`, description: profile.statement, siteName: `${profile.name} | AI Engineering`, images: [{ url: "/og-v2.png", width: 1731, height: 909, alt: "Saroswat Roy, governed agents and trustworthy language systems" }] },
+  twitter: { card: "summary_large_image", title: `${profile.name} | AI Engineer`, description: profile.statement, images: ["/og-v2.png"] },
   icons: { icon: "/favicon.png" },
 };
 
