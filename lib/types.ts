@@ -47,7 +47,8 @@ export interface Certification {
   title: string;
   provider: string;
   category: string;
-  status: "Profile reported" | "Verified link";
+  issued: string;
+  credentialId?: string;
   url?: string;
 }
 

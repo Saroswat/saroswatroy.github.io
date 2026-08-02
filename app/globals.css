@@ -168,6 +168,8 @@ blockquote { margin: 3.5rem 0 0; padding: 2rem 0 2rem 2rem; border-left: 2px sol
 .filter-list button.active { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
 .project-tools select { max-width: 300px; }
 .result-count { color: var(--muted); font: .72rem ui-monospace, monospace; text-align: right; }
+.cert-filter { display: grid; justify-items: end; gap: .55rem; min-width: min(100%, 300px); }
+.cert-filter select { max-width: none; }
 
 .case-hero { display: grid; grid-template-columns: 1.35fr .65fr; gap: 5rem; align-items: end; padding-bottom: 5rem; border-bottom: 1px solid var(--line); }
 .case-hero .back-link { display: inline-block; margin-bottom: 5rem; }
@@ -237,9 +239,13 @@ blockquote { margin: 3.5rem 0 0; padding: 2rem 0 2rem 2rem; border-left: 2px sol
 .skills-grid ul { list-style: none; padding: 0; }
 .skills-grid li { padding: .55rem 0; border-top: 1px solid var(--line); }
 .cert-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-.cert-card { min-height: 260px; padding: 1.6rem; border: 1px solid var(--line); background: var(--surface); display: flex; flex-direction: column; }
-.cert-card h2 { margin: auto 0 .8rem; font-size: 1.25rem; line-height: 1.28; }
-.cert-card > p:not(.eyebrow) { color: var(--accent); }
+.cert-card { min-height: 230px; padding: 1.6rem; border: 1px solid var(--line); background: var(--surface); display: flex; flex-direction: column; }
+.cert-card h2 { margin: auto 0 .9rem; font-size: 1.18rem; line-height: 1.28; }
+.cert-meta { display: flex; justify-content: space-between; gap: 1rem; padding-top: .75rem; border-top: 1px solid var(--line); }
+.cert-meta p { color: var(--accent); }
+.cert-meta p:last-child { flex: 0 0 auto; color: var(--muted); font: .68rem ui-monospace, monospace; text-transform: uppercase; letter-spacing: .06em; }
+.credential-id { margin-top: .55rem; color: var(--muted); font: .65rem ui-monospace, monospace; overflow-wrap: anywhere; }
+.credential-link { margin-top: .55rem; font-size: .78rem; }
 .resume-hero { align-items: end; }
 .resume-hero > div:last-child { grid-column: 2; }
 .resume-preview { border: 1px solid var(--line); background: var(--surface); }
@@ -317,6 +323,8 @@ blockquote { margin: 3.5rem 0 0; padding: 2rem 0 2rem 2rem; border-left: 2px sol
   .story-rail { display: none; }
   .inline-cta, .next-case { align-items: flex-start; flex-direction: column; }
   .project-tools { align-items: stretch; flex-direction: column; }
+  .cert-filter { justify-items: stretch; }
+  .cert-filter .result-count { text-align: left; }
   .filter-list { justify-content: flex-start; }
   .case-hero { gap: 2rem; }
   .case-hero .back-link { margin-bottom: 3rem; }
