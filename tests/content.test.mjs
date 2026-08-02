@@ -38,3 +38,13 @@ test("all project slugs have static case-study generation", async () => {
   assert.match(route, /generateMetadata/);
   assert.match(route, /notFound/);
 });
+
+test("certification archive contains the complete supplied record", async () => {
+  const source = await readFile(new URL("data/portfolio.ts", root), "utf8");
+  const certificationSection = source.slice(source.indexOf("const certificationRecords"));
+  const records = [...certificationSection.matchAll(/^  \["/gm)];
+  assert.equal(records.length, 99);
+  assert.doesNotMatch(certificationSection, /status:/i);
+  assert.match(certificationSection, /IBM Cybersecurity Analyst - Professional Certificate/);
+  assert.match(certificationSection, /Cyber Ninja - Cyber Security Course/);
+});
